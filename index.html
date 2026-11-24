@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CTF de ciberseguridad</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Preparación para los concursos de captura de la bandera (CTF), de tipo *jeopardy* y de ataque y defensa: cómo reconocer cada tipo de reto, las herramientas y técnicas de cada categoría (criptografía, web, reversa, explotación de binarios, forense y OSINT) y la estrategia de un equipo durante la prueba.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">CTF de <b>ciberseguridad</b></a><span class="eyebrow">Curso visual e interactivo · Competencias</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Competencias</span>
+  <h1>Encontrar la bandera antes que los demás</h1>
+  <p class="lede">En un CTF cada reto esconde una cadena con la forma `flag{...}` detrás de un cifrado mal usado, una página web vulnerable, un binario o una captura de red. Gana el equipo que reconoce el tipo de reto en minutos, tiene la herramienta lista y sabe cuándo dejarlo para otro compañero. Este curso recorre las familias de retos que más se repiten, con las señales que las delatan, la técnica, retos resueltos de dificultad creciente, los errores típicos y un simulacro con reloj.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 16 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes y profesionales de tecnología que quieren competir en CTF. Conviene manejar la terminal de Linux y programar en Python. La teoría está en otros cursos: las vulnerabilidades y las defensas en Seguridad informática, los cifrados y sus garantías en Criptografía, la memoria y el ensamblador en Arquitectura del computador y Sistemas operativos. Todo se practica en retos hechos para practicar o en máquinas propias; atacar sistemas ajenos sin autorización es un delito y queda fuera del curso.</p>
+    <p><b>Cómo está hecho.</b> Un equipo de cuatro se prepara para su primer CTF de tipo *jeopardy* y, al final, para uno de ataque y defensa. Cada capítulo es una categoría o una familia de retos y termina con un simulacro: dos o tres retos propios con su reloj, servidos dentro del navegador o en un contenedor local. Los laboratorios dejan tocar el mecanismo: un desbordamiento de pila con la memoria a la vista, un oráculo de relleno que responde, un decodificador que reconoce codificaciones, un tablero de puntaje dinámico. Las prácticas se hacen en plataformas gratuitas hechas para practicar: picoCTF, OverTheWire, CryptoHack, la Web Security Academy de PortSwigger y pwn.college.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El concurso y el taller</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-un-ctf"><span class="n">01</span><b>Qué es un CTF: formatos, reglas y puntaje</b><p>*Jeopardy* y ataque y defensa, las categorías, la bandera, el puntaje dinámico y las reglas de ética que no se rompen.</p></div>
+    <div class="mod soon" data-id="el-taller"><span class="n">02</span><b>El taller del concursante: máquina, terminal y herramientas</b><p>La máquina virtual de trabajo, la terminal, Python con pwntools, CyberChef, los depuradores y descompiladores, el proxy web y el cuaderno compartido del equipo.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Criptografía</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="codificaciones-y-cifrados-clasicos"><span class="n">03</span><b>Codificaciones y cifrados clásicos: reconocer por la forma</b><p>Base64, hexadecimal, ROT13, César, Vigenère y XOR con clave corta: cómo reconocerlos por el aspecto del texto y romperlos con frecuencias.</p></div>
+    <div class="mod soon" data-id="rsa-mal-usado"><span class="n">04</span><b>Retos de RSA mal usado</b><p>Exponente pequeño, factores cercanos, módulo común, mensajes repetidos y factores ya publicados: los defectos de parámetros que más se repiten.</p></div>
+    <div class="mod soon" data-id="simetrica-mal-usada"><span class="n">05</span><b>Retos de criptografía simétrica mal usada</b><p>ECB byte a byte, inversión de bits en CBC, el oráculo de relleno, el nonce reutilizado y el generador aleatorio predecible.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Web</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="web-reconocimiento-e-inyeccion"><span class="n">06</span><b>Retos web: reconocimiento e inyección</b><p>Mirar donde nadie mira (código fuente, `robots.txt`, cabeceras, cookies) y las inyecciones: SQL, comandos y plantillas en el servidor.</p></div>
+    <div class="mod soon" data-id="web-sesiones-y-logica"><span class="n">07</span><b>Retos web: sesiones, archivos y lógica de la aplicación</b><p>Cookies y JWT manipulables, recorrido de directorios, IDOR, SSRF y XSS contra un bot administrador.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Binarios</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="ingenieria-inversa"><span class="n">08</span><b>Retos de ingeniería inversa</b><p>Del ejecutable al algoritmo: `strings` y `ltrace`, el descompilador, la contraseña que se compara byte a byte y el solucionador de restricciones.</p></div>
+    <div class="mod soon" data-id="desbordamiento-de-pila"><span class="n">09</span><b>Desbordamiento de búfer en la pila</b><p>Sobrescribir la dirección de retorno: saltar a una función oculta, inyectar código, encadenar fragmentos con ROP y volver a la biblioteca de C.</p></div>
+    <div class="mod soon" data-id="cadenas-de-formato-y-fugas"><span class="n">10</span><b>Cadenas de formato y fugas de memoria</b><p>El `printf` con la entrada del usuario como formato: leer la pila, filtrar direcciones para vencer ASLR y escribir en memoria.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Forense, OSINT y misceláneos</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="forense-de-archivos"><span class="n">11</span><b>Retos de forense de archivos y esteganografía</b><p>Archivos que no son lo que dicen, datos escondidos dentro de imágenes, metadatos, imágenes de disco y volcados de memoria.</p></div>
+    <div class="mod soon" data-id="forense-de-red"><span class="n">12</span><b>Retos de forense de red</b><p>Capturas de tráfico: seguir conversaciones, extraer archivos, encontrar datos sacados por DNS y reconstruir lo que se tecleó en un teclado USB.</p></div>
+    <div class="mod soon" data-id="osint-y-miscelaneos"><span class="n">13</span><b>Retos de OSINT y misceláneos</b><p>Encontrar información pública (dónde se tomó una foto, quién es un usuario) y los retos que no caben en otra categoría: cárceles de Python, servicios que piden respuestas rápidas y lenguajes esotéricos.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-6" open><summary><h2><span class="pn">Parte 6</span> Competir en equipo</h2><span class="cuenta" data-etapa-cuenta="6"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="estrategia-jeopardy"><span class="n">14</span><b>Estrategia en un CTF de tipo jeopardy</b><p>Repartir por categorías, el triaje de los primeros minutos, cuándo rotar un reto, el cuaderno compartido y el *write-up* después del concurso.</p></div>
+    <div class="mod soon" data-id="ataque-y-defensa"><span class="n">15</span><b>CTF de ataque y defensa</b><p>Cada equipo cuida servicios vulnerables y ataca los de los demás: parchar sin romper, automatizar el envío de banderas y vigilar el tráfico propio.</p></div>
+    <div class="mod soon" data-id="entrenamiento-y-simulacros"><span class="n">16</span><b>Entrenamiento semanal y simulacro completo</b><p>Un plan por semanas y por categorías, la lectura de *write-ups*, el taller que crece con cada concurso y un simulacro final completo.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/ctf" target="_blank" rel="noopener">github.com/aaramirez/ctf</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
